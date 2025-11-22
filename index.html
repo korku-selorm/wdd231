@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WDD 231 - Selorm Korku Ladzekpo - Home Page">
+  <meta name="author" content="Selorm Korku Ladzekpo">
+  <title>Selorm Ladzekpo | WDD 231</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/coursepage.css">
+
+  <script src="scripts/homepage.js" defer></script>
+</head>
+<body>
+    <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="Site Logo">
+      <span id="name">Selorm Korku Ladzekpo</span>
+    </div>
+    <button id="menu-toggle" aria-label="Menu">☰</button>
+    </header>
+    
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="chamber/">Chamber</a></li>
+        <li><a href="final/">Final</a></li>
+      </ul>
+    </nav>
+
+  <main>
+    
+    <div class="container">
+      <h1>Home</h1>
+
+      <section class="about-me">
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repudiandae cupiditate blanditiis animi vel. Quod
+          sit ipsam dolores temporibus sed hic est reiciendis magnam, aliquid eius officiis velit iste architecto esse
+          excepturi recusandae. Quo, cumque blanditiis quibusdam ut eius sint tenetur optio quisquam veritatis quas
+          perspiciatis, qui ea sunt dolores. <br>
+          Dignissimos ab voluptate asperiores laudantium reprehenderit animi et, doloremque aspernatur illum fugit
+          voluptatem commodi vero repudiandae nostrum corrupti, excepturi dolore obcaecati id amet, saepe cumque vel
+          repellat voluptatum accusantium?</p>
+      </section>
+    
+      <section class="student">
+        <h2>Student Profile</h2>
+        <img src="images/profile.jpg" alt="Selorm Korku Ladzekpo" class="profile">
+      </section>
+    
+    
+    
+      <section class="course-area">
+        <h2>Course Information</h2>
+        <div class="filter-buttons">
+          <button data-filter="all" class="active">All Courses</button>
+          <button data-filter="WDD">WDD Courses</button>
+          <button data-filter="CSE">CSE Courses</button>
+        </div>
+        <div id="courses-grid"></div>
+        <p id="total-credits">The Total Credits for Courses listed is : <span id="credits-value">0</span></p>
+      </section>
+    </div>
+    <div class="icons">
+      <a href="www.github.com"><img src="images/githubicon.png" alt="github logo"></a>
+      <a href="www.linkedin.com"><img src="images/linkedin.png" alt="linkedin logo"></a>
+      <a href="www.x.com"><img src="images/twitter.png" alt="x logo"></a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© <span id="currentyear"></span> Selorm Korku Ladzekpo | Ghana</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
