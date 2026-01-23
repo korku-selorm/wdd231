@@ -1,0 +1,146 @@
+body {
+    font-family: Merriweather, serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+  background-color: #011C40;
+  color: #A7EBF2;
+  padding: 1rem;
+}
+
+
+header h1 {
+  margin: 0;
+  font-family: Merriweather, serif;
+  font-size: 1.4rem;
+}
+.header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-bar h1 {
+  margin: 0;
+}
+
+
+nav {
+  margin-top: 0.5rem;
+}
+
+#menu {
+  background: none;
+  border: none;
+  color: #A7EBF2;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  flex-direction: column;
+  background-color: #011C40;
+}
+
+.navigation.open {
+  display: flex;
+}
+
+.navigation li {
+  border-top: 1px solid #26658C;
+}
+
+.navigation a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: #A7EBF2;
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+}
+
+.navigation a:hover {
+  background-color: #26658C;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+#members-container {
+    padding: 1rem;
+}
+
+.card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.view-toggle {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.view-toggle button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+
+.view-toggle button.active {
+    background: #007bff;
+    color: white;
+}
+
+/* Grid view (default on small screens) */
+.grid-view {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+/* List view */
+.list-view .card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.list-view .card img {
+    max-width: 200px;
+}
+
+/* Responsive: No horizontal scroll */
+html,
+body {
+    overflow-x: hidden;
+}

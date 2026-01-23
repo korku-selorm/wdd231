@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Ashar-Invest Ltd",
+    "address": "Plot 45, Spintex Road, Accra",
+    "phone": "+233 30 281 2345",
+    "url": "https://ashar-invest.com",
+    "image": "ashar-invest.jpg",
+    "membershipLevel": 3,
+    "description": "Leading exporter of agricultural products and food processing."
+  },
+  {
+    "name": "Kashlynn Company Limited",
+    "address": "Ring Road Central, Accra",
+    "phone": "+233 54 123 4567",
+    "url": "https://kashlynn.com.gh",
+    "image": "kashlynn.jpg",
+    "membershipLevel": 2,
+    "description": "Specializes in auto parts, equipment rental, and road construction."
+  },
+  {
+    "name": "Lamp Motors",
+    "address": "Achimota Road, Accra",
+    "phone": "+233 20 987 6543",
+    "url": "https://lampmotors.com",
+    "image": "lamp-motors.avif",
+    "membershipLevel": 1,
+    "description": "Import and distribution of vehicle parts with repair services."
+  },
+  {
+    "name": "Primus Group",
+    "address": "Osu, Accra",
+    "phone": "+233 30 277 8899",
+    "url": "https://primusgroup.com",
+    "image": "primus-group.jpg",
+    "membershipLevel": 2,
+    "description": "Construction and real estate development firm."
+  },
+  {
+    "name": "Sage Remedies",
+    "address": "Airport Residential Area, Accra",
+    "phone": "+233 24 567 8901",
+    "url": "https://sageremedies.com",
+    "image": "sage-remedies.jpg",
+    "membershipLevel": 3,
+    "description": "Pharmaceutical and health products supplier."
+  },
+  {
+    "name": "Mai Education Consult",
+    "address": "Cantonments, Accra",
+    "phone": "+233 30 291 1122",
+    "url": "https://maiedu.com",
+    "image": "mai-education.jpg",
+    "membershipLevel": 1,
+    "description": "Educational consulting and study abroad services."
+  },
+  {
+    "name": "Nalo Solutions Limited",
+    "address": "East Legon, Accra",
+    "phone": "+233 54 321 0987",
+    "url": "https://nalosolutions.com",
+    "image": "nalo-solutions.jpg",
+    "membershipLevel": 2,
+    "description": "IT services and software development."
+  },
+  {
+    "name": "Trade Right International",
+    "address": "Tema Harbour Area, Accra",
+    "phone": "+233 30 266 7788",
+    "url": "https://traderightintl.com",
+    "image": "trade-right.jpg",
+    "membershipLevel": 3,
+    "description": "International trade and logistics experts."
+  }
+]

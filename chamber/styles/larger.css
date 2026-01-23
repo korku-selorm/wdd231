@@ -1,0 +1,42 @@
+@media (min-width: 768px) {
+
+  .grid-view {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #menu {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav {
+    margin-top: 0;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: transparent;
+  }
+
+  .navigation li {
+    border: none;
+  }
+
+  .navigation a {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .grid-view {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
