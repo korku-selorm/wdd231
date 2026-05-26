@@ -1,0 +1,95 @@
+:root {
+    --font-1: 'Nunito';
+    --font-2: 'Poppins';
+}
+
+* {
+    box-sizing: border-box;
+    font-family: var(--font-1), sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+}
+
+#menu {
+   /*  border: 1px solid black; */
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75;
+    color: #000;
+    width:40px;
+    height: 40px;
+    position: absolute;
+    top: 0.2rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #393e4666
+}
+
+#menu::before{
+    content: "≡";/* this is to set the initial conent to a humburger icon before anything will be added to it or it changes  */
+}
+
+nav {
+    background-color: #948979;
+}
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.navigation li {
+    display: none;
+}
+.navigation a {
+    display: block;
+    padding: 0.2rem;
+    text-align:left;
+    text-decoration: none;
+    color: #222831;
+    font-weight:700;
+    border-bottom: 1px solid #222831;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover, .navigation a:active {
+    color: white;
+    background-color: #222831;
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+@media only screen and (min-width: 40em) {
+    .navigation{
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+
+        flex: 1 1 100%;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+    #menu {
+        display: none;
+    }
+}

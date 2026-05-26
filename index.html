@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Home Page</title>
+    <meta name="description"
+        content="Welcome to the course home page. Here you will find all the resources and information you need to succeed in this course.">
+    <meta name="author" content="Selorm Korku Ladzekpo">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/nav.css">
+
+    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1><span><img src="images/logo.png" alt="site logo" class="logo"></span> Selorm Ladzekpo</h1>
+    </header>
+
+    <hr>
+    <a href="#" id="menu"></a>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="chamber">Chamber Project</a></li>
+            <li><a href="final">Final Project</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Home</h2>
+        <div class="flex">
+            <section class="about">
+                <h3>About Me</h3>
+                <p>I am a passionate web developer with a strong foundation in HTML, CSS, and JavaScript. I love
+                    creating
+                    engaging and user-friendly websites that provide an excellent experience for users. My name is
+                    Selorm
+                    Korku Ladzekpo, I am 23 years old and i am dedicated to becoming the best software developer in this
+                    world and i am trying to achieve this by enrolling and studying with BYU pathway. I am a ghanain and
+                    i
+                    live in Kasoa. i am looking forward to making new friends and connecting with people in different
+                    background, most importantly in the tech industry.</p>
+            </section>
+            <section class="photo">
+                <h3>Student Photo</h3>
+                <img src="images/student.jpg" alt="student's image" class="student-photo">
+            </section>
+        </div>
+
+        <section class="courses">
+            <h3>Web Certificate Courses</h3>
+
+            <div class="buts">
+                <button class="course-btn" onclick="filter('ALL', this)">All</button>
+                <button class="course-btn" onclick="filter('CSE', this)">CSE</button>
+                <button class="course-btn" onclick="filter('WDD', this)">WDD</button>
+            </div>
+
+            <div id="course-list"></div>
+
+            <p id="total"></p>
+        </section>
+        <div class="icons">
+            <a href="https://www.facebook.com/selorm.korku" target="_blank" rel="noopener noreferrer">
+                <img src="images/facebook.png" alt="Facebook">
+            </a>
+
+            <a href="https://www.linkedin.com/in/selorm-ladzekpo-9b1b4b1b3/" target="_blank" rel="noopener noreferrer">
+                <img src="images/linked.jpg" alt="LinkedIn">
+            </a>
+
+            <a href="https://www.github.com/selormladzekpo" target="_blank" rel="noopener noreferrer">
+                <img src="images/github.webp" alt="GitHub">
+            </a>
+        </div>
+
+    </main>
+
+    <hr class="footer-separator">
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Selorm Korku Ladzekpo. Ghana.</p>
+        <p id="lastmod"></p>
+    </footer>
+
+</body>
+
+</html>
