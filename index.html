@@ -23,7 +23,7 @@
 
 <body>
     <header>
-        <h1><span><img src="images/logo.png" alt="site logo" class="logo"></span> Selorm Ladzekpo</h1>
+        <p class="name"><span><img src="images/logo.png" alt="site logo" class="logo"></span> Selorm Ladzekpo</p>
     </header>
 
     <hr>
@@ -37,10 +37,10 @@
     </nav>
 
     <main>
-        <h2>Home</h2>
+        <h1>Home</h1>
         <div class="flex">
             <section class="about">
-                <h3>About Me</h3>
+                <h2>About Me</h2>
                 <p>I am a passionate web developer with a strong foundation in HTML, CSS, and JavaScript. I love
                     creating
                     engaging and user-friendly websites that provide an excellent experience for users. My name is
@@ -51,25 +51,28 @@
                     live in Kasoa. i am looking forward to making new friends and connecting with people in different
                     background, most importantly in the tech industry.</p>
             </section>
+
             <section class="photo">
-                <h3>Student Photo</h3>
+                <h2>Student Photo</h2>
                 <img src="images/student.jpg" alt="student's image" class="student-photo">
             </section>
         </div>
-
         <section class="courses">
-            <h3>Web Certificate Courses</h3>
+            <h2>Web Certificate Courses</h2>
 
             <div class="buts">
-                <button class="course-btn" onclick="filter('ALL', this)">All</button>
-                <button class="course-btn" onclick="filter('CSE', this)">CSE</button>
-                <button class="course-btn" onclick="filter('WDD', this)">WDD</button>
+                <button class="course-btn" data-filter="ALL">All</button>
+                <button class="course-btn" data-filter="CSE">CSE</button>
+                <button class="course-btn" data-filter="WDD">WDD</button>
             </div>
 
             <div id="course-list"></div>
 
             <p id="total"></p>
         </section>
+
+    </main>
+
         <div class="icons">
             <a href="https://www.facebook.com/selorm.korku" target="_blank" rel="noopener noreferrer">
                 <img src="images/facebook.png" alt="Facebook">
@@ -83,8 +86,6 @@
                 <img src="images/github.webp" alt="GitHub">
             </a>
         </div>
-
-    </main>
 
     <hr class="footer-separator">
 
