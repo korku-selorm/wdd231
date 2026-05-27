@@ -1,7 +1,3 @@
-:root {
-    --font-1: 'Nunito';
-}
-
 * {
     box-sizing: border-box;
     font-family: var(--font-1), sans-serif;
