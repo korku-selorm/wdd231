@@ -98,7 +98,7 @@ button {
     font-size: 1rem;
     font-weight: 600;
     color: #222831;
-    padding: 0..2rem;
+    padding: 0.2rem;
     text-align: center;
 }   
 
@@ -189,8 +189,5 @@ hr {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     }
-
-
-
 
 }
