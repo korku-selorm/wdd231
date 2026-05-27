@@ -78,31 +78,34 @@ const courses = [
     }
 ]
 
+
 function displayCourses(arr) {
     const container = document.getElementById('course-list');
     container.innerHTML = '';
 
     arr.forEach(course => {
         const card = document.createElement('div');
-
         card.className = 'card' + (course.completed ? ' completed' : '');
-
         card.innerHTML = `
-            <p class="course-title">${course.subject} ${course.number} </p>
+            <p class="course-title">${course.subject} ${course.number}</p>
         `;
-
         container.appendChild(card);
     });
 
     const total = arr.reduce((sum, c) => sum + c.credits, 0);
-
-    document.getElementById('total').textContent =
-        'The total credit for courses listed above is ' + total;
+    document.getElementById('total').textContent = 'Total Credits: ' + total;
 }
 
-function filter(type, btn) {
-    document.querySelectorAll('.course-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    const filtered = type === 'ALL' ? courses : courses.filter(c => c.subject === type);
-    displayCourses(filtered);
-}
+// add event listeners via JS — no onclick in HTML
+document.querySelectorAll('.course-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const type = btn.dataset.filter;
+        document.querySelectorAll('.course-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filtered = type === 'ALL' ? courses : courses.filter(c => c.subject === type);
+        displayCourses(filtered);
+    });
+});
+
+// show all courses on page load
+displayCourses(courses);
