@@ -1,0 +1,74 @@
+[
+    {
+        "name": "SkyTech Drones Ghana",
+        "address": "12 Aviation Road, Accra",
+        "phone": "+233 24 000 1111",
+        "website": "https://skytechgh.com",
+        "image": "skytech.jpg",
+        "membership": 3,
+        "description": "Leading drone manufacturer in West Africa"
+    },
+    {
+        "name": "AerialView Solutions",
+        "address": "45 Kotoka Street, Kumasi",
+        "phone": "+233 20 000 2222",
+        "website": "https://aerialview.com",
+        "image": "aerialview.jpg",
+        "membership": 2,
+        "description": "Aerial photography and surveying services"
+    },
+    {
+        "name": "DroneGuard Security",
+        "address": "8 Independence Ave, Accra",
+        "phone": "+233 27 000 3333",
+        "website": "https://droneguard.com",
+        "image": "droneguard.jpg",
+        "membership": 3,
+        "description": "Surveillance and security drone operations"
+    },
+    {
+        "name": "AgriDrone Africa",
+        "address": "22 Farm Road, Tamale",
+        "phone": "+233 26 000 4444",
+        "website": "https://agridrone.com",
+        "image": "agridrone.jpg",
+        "membership": 1,
+        "description": "Drone solutions for agriculture and farming"
+    },
+    {
+        "name": "SwiftDelivery Drones",
+        "address": "5 Logistics Lane, Tema",
+        "phone": "+233 23 000 5555",
+        "website": "https://swiftdelivery.com",
+        "image": "swift.jpg",
+        "membership": 2,
+        "description": "Last mile drone delivery services"
+    },
+    {
+        "name": "MapAir Ghana",
+        "address": "30 Survey Close, Accra",
+        "phone": "+233 24 000 6666",
+        "website": "https://mapairgh.com",
+        "image": "mapair.jpg",
+        "membership": 1,
+        "description": "Drone mapping and GIS data services"
+    },
+    {
+        "name": "ReliefWings NGO",
+        "address": "17 Hope Street, Cape Coast",
+        "phone": "+233 20 000 7777",
+        "website": "https://reliefwings.org",
+        "image": "reliefwings.jpg",
+        "membership": 2,
+        "description": "Humanitarian drone delivery for remote areas"
+    },
+    {
+        "name": "VoltAir Systems",
+        "address": "9 Tech Park, Accra",
+        "phone": "+233 27 000 8888",
+        "website": "https://voltair.com",
+        "image": "voltair.jpg",
+        "membership": 3,
+        "description": "Electric drone design and engineering"
+    }
+]
