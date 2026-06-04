@@ -46,3 +46,27 @@
         flex-shrink: 0;
     }
 }
+
+
+@media (min-width: 768px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        padding: 2rem;
+    }
+
+    .hero {
+        grid-column: 1 / -1; /* hero spans full width */
+    }
+
+    #spotlight-container {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .spotlights {
+        grid-column: 1 / -1; /* spotlights span full width */
+    }
+}
