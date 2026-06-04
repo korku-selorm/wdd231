@@ -273,3 +273,8 @@ footer {
     object-fit: cover;
     border-radius: 8px;
 }
+
+.hero h1 {
+    color: var(--primary);
+    font-size: 2rem;
+}
