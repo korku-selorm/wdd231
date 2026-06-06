@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join | Eyes Up Drone Hubs</title>
+    <meta name="description" content="Join the Eyes Up Drone Hubs Chamber of Commerce and grow your drone business in Ghana.">
+    <meta name="author" content="Selorm Korku Ladzekpo">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 768px)">
+    <script src="scripts/join.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="header-brand">
+            <img src="images/logo.jpg" alt="Eyes Up Drone Hubs Logo" width="60" height="60">
+            <p class="head1">Eyes Up Drone Hubs</p>
+        </div>
+        <button id="menu-btn" aria-label="Toggle navigation menu">&#9776;</button>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="join-main">
+
+        <section class="form-section">
+            <h2>Apply for Membership</h2>
+
+            <form action="thankyou.html" method="get">
+
+                <label>
+                    First Name
+                    <input type="text" name="firstname" title="Enter your first name" autocomplete="given-name" required>
+                </label>
+
+                <label>
+                    Last Name
+                    <input type="text" name="lastname" title="Enter your last name" autocomplete="family-name" required>
+                </label>
+
+                <label>
+                    Organizational Title
+                    <input type="text" name="orgtitle" title="Enter your title within your organization" autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}" placeholder="e.g. Operations Manager">
+                </label>
+
+                <label>
+                    Email Address
+                    <input type="email" name="email" title="Enter your email address" autocomplete="email" placeholder="example@yourdomain.com" required>
+                </label>
+
+                <label>
+                    Mobile Phone
+                    <input type="tel" name="phone" title="Enter your mobile phone number" autocomplete="tel" required>
+                </label>
+
+                <label>
+                    Business / Organization Name
+                    <input type="text" name="organization" title="Enter your business or organization name" autocomplete="organization" required>
+                </label>
+
+                <label>
+                    Membership Level
+                    <select name="membership" title="Select a membership level">
+                        <option value="">-- Select a Level --</option>
+                        <option value="np">NP Membership — Non Profit (Free)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label>
+                    Business Description
+                    <textarea name="description" title="Describe your business or organization" rows="4"></textarea>
+                </label>
+
+                <input type="hidden" name="timestamp" id="timestamp">
+
+                <input type="submit" value="Submit Application">
+
+            </form>
+        </section>
+
+        <!-- MEMBERSHIP CARDS -->
+        <section class="membership-cards">
+            <h2>Membership Levels</h2>
+
+            <div class="card np-card">
+                <h3>NP Membership</h3>
+                <p>For non profit organizations</p>
+                <p class="price">Free</p>
+                <a href="#" class="card-link" data-modal="modal-np">Learn More</a>
+            </div>
+
+            <div class="card bronze-card">
+                <h3>Bronze</h3>
+                <p>Entry level membership</p>
+                <p class="price">GHS 500/yr</p>
+                <a href="#" class="card-link" data-modal="modal-bronze">Learn More</a>
+            </div>
+
+            <div class="card silver-card">
+                <h3>Silver</h3>
+                <p>Growing businesses</p>
+                <p class="price">GHS 1,200/yr</p>
+                <a href="#" class="card-link" data-modal="modal-silver">Learn More</a>
+            </div>
+
+            <div class="card gold-card">
+                <h3>Gold</h3>
+                <p>Premium membership</p>
+                <p class="price">GHS 2,500/yr</p>
+                <a href="#" class="card-link" data-modal="modal-gold">Learn More</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- MODALS -->
+    <dialog id="modal-np">
+        <h3>NP Membership Benefits</h3>
+        <ul>
+            <li>Directory listing</li>
+            <li>Access to chamber events</li>
+            <li>Monthly newsletter</li>
+            <li>Community networking</li>
+        </ul>
+        <button class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="modal-bronze">
+        <h3>Bronze Membership Benefits</h3>
+        <ul>
+            <li>Everything in NP</li>
+            <li>10% discount on chamber events</li>
+            <li>Business profile page</li>
+            <li>Access to training workshops</li>
+        </ul>
+        <button class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="modal-silver">
+        <h3>Silver Membership Benefits</h3>
+        <ul>
+            <li>Everything in Bronze</li>
+            <li>Spotlight on directory page</li>
+            <li>25% discount on chamber events</li>
+            <li>Priority listing in directory</li>
+            <li>Social media promotion</li>
+        </ul>
+        <button class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="modal-gold">
+        <h3>Gold Membership Benefits</h3>
+        <ul>
+            <li>Everything in Silver</li>
+            <li>Homepage spotlight feature</li>
+            <li>50% discount on all events</li>
+            <li>Dedicated account manager</li>
+            <li>Priority advertising placement</li>
+            <li>Annual awards recognition</li>
+        </ul>
+        <button class="close-modal">Close</button>
+    </dialog>
+
+    <footer>
+        <p>Selorm Korku Ladzekpo &copy; <span id="current-year"></span> | WDD 231</p>
+        <p id="lastmod"></p>
+        <p>Accra, Ghana</p>
+    </footer>
+
+</body>
+</html>

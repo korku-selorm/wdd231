@@ -70,3 +70,19 @@
         grid-column: 1 / -1; /* spotlights span full width */
     }
 }
+
+@media (min-width: 768px) {
+    .join-main {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 2rem;
+    }
+
+    .form-section {
+        flex: 2;
+    }
+
+    .membership-cards {
+        flex: 1;
+    }
+}

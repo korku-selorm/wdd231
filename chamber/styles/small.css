@@ -278,3 +278,206 @@ footer {
     color: var(--primary);
     font-size: 2rem;
 }
+
+/* join page */
+.join-main {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form-section h2,
+.membership-cards h2 {
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    font-size: 0.95rem;
+    color: var(--text);
+}
+
+input,
+select,
+textarea {
+    padding: 0.6rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background-color: var(--secondary);
+    color: var(--text);
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+    background-color: var(--accent);
+    color: var(--primary);
+    border: none;
+    padding: 0.8rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--accent-dark);
+}
+
+/* membership cards */
+.membership-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card {
+    border-radius: 8px;
+    padding: 1.2rem;
+    text-align: center;
+    animation: slideIn 0.6s ease forwards;
+    opacity: 0;
+}
+
+.np-card { 
+    background-color: #1a2a1a; 
+    border: 1px solid #2d5a2d; 
+    animation-delay: 0.1s;
+    color: #90ee90; /* light green text */
+}
+
+.bronze-card { 
+    background-color: #2a1a0a; 
+    border: 1px solid #8B4513; 
+    animation-delay: 0.3s;
+    color: #f4a460; /* light brown/sandy text */
+}
+
+.silver-card { 
+    background-color: #1a1a2a; 
+    border: 1px solid #7a9ab0; 
+    animation-delay: 0.5s;
+    color: #c0d8e8; /* light blue-gray text */
+}
+
+.gold-card { 
+    background-color: #2a2000; 
+    border: 1px solid #FFD700; 
+    animation-delay: 0.7s;
+    color: #FFD700; /* gold text */
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card h3 {
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+}
+
+.card .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.card-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    padding: 0.4rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.card-link:hover {
+    background-color: var(--accent);
+    color: var(--primary);
+}
+
+/* modals */
+dialog {
+    background-color: var(--secondary);
+    color: var(--text);
+    border: 1px solid var(--accent);
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 400px;
+    width: 90%;
+}
+
+dialog h3 {
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+dialog ul {
+    padding-left: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+dialog ul li {
+    margin-bottom: 0.5rem;
+}
+
+.close-modal {
+    background-color: var(--accent);
+    color: var(--primary);
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.thankyou-main {
+    padding: 2rem;
+    text-align: center;
+}
+
+.thankyou-main h2 {
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+.submitted-info {
+    background-color: var(--secondary);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    max-width: 500px;
+    text-align: left;
+}
+
+.submitted-info h3 {
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+.submitted-info p {
+    margin-bottom: 0.5rem;
+}
