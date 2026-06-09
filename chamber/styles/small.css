@@ -481,3 +481,86 @@ dialog::backdrop {
 .submitted-info p {
     margin-bottom: 0.5rem;
 }
+
+/* discover page */
+.discover-main {
+    padding: 1rem;
+}
+
+.discover-main h2 {
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+.visit-msg {
+    background-color: var(--secondary);
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    padding: 0.8rem 1rem;
+    margin-bottom: 1.5rem;
+    color: var(--accent);
+    font-weight: bold;
+}
+
+.discover-grid {
+    display: grid;
+    grid-template-areas:
+        "place1"
+        "place2"
+        "place3"
+        "place4"
+        "place5"
+        "place6"
+        "place7"
+        "place8";
+    gap: 1rem;
+}
+
+.discover-card {
+    background-color: var(--secondary);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.discover-card h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.discover-card figure {
+    margin: 0 0 0.5rem;
+}
+
+.discover-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.discover-card address {
+    font-style: italic;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+}
+
+.discover-card p {
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+}
+
+.discover-card button {
+    background-color: var(--accent);
+    color: var(--primary);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.discover-card button:hover {
+    background-color: var(--accent-dark);
+}

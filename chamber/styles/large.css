@@ -1,10 +1,10 @@
 @media (min-width: 768px) {
     #menu-btn {
-        display: none; /* hide hamburger on desktop */
+        display: none;
     }
 
     #main-nav {
-        display: block; /* always visible on desktop */
+        display: block;
         position: static;
         width: auto;
         border: none;
@@ -17,11 +17,11 @@
         padding: 0;
     }
 
-
     main {
         padding: 2rem;
     }
 
+    /* directory page */
     #directory-container.grid-view {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -45,19 +45,16 @@
         height: 100px;
         flex-shrink: 0;
     }
-}
 
-
-@media (min-width: 768px) {
-    main {
+    /* home page only — use class to avoid affecting other pages */
+    .home-main {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
-        padding: 2rem;
     }
 
     .hero {
-        grid-column: 1 / -1; /* hero spans full width */
+        grid-column: 1 / -1;
     }
 
     #spotlight-container {
@@ -67,15 +64,13 @@
     }
 
     .spotlights {
-        grid-column: 1 / -1; /* spotlights span full width */
+        grid-column: 1 / -1;
     }
-}
 
-@media (min-width: 768px) {
+    /* join page */
     .join-main {
         flex-direction: row;
         align-items: flex-start;
-        padding: 2rem;
     }
 
     .form-section {
@@ -84,5 +79,51 @@
 
     .membership-cards {
         flex: 1;
+    }
+}
+
+/* discover medium screens */
+@media (min-width: 641px) and (max-width: 1024px) {
+    .discover-grid {
+        grid-template-areas:
+            "place1 place2"
+            "place3 place3"
+            "place4 place5"
+            "place6 place6"
+            "place7 place8";
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .discover-card img:hover {
+        opacity: 0.8;
+        transform: scale(1.02);
+        transition: all 0.3s ease;
+    }
+}
+
+/* discover large screens */
+@media (min-width: 1025px) {
+    .discover-main {
+        max-width: 1200px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .discover-grid {
+        grid-template-areas:
+            "place1 place2 place3"
+            "place4 place4 place5"
+            "place6 place7 place8";
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .discover-card img {
+        transition: all 0.3s ease;
+    }
+
+    .discover-card img:hover {
+        opacity: 0.75;
+        filter: brightness(1.2) saturate(1.3);
+        transform: scale(1.03);
     }
 }
