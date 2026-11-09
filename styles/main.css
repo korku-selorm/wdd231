@@ -83,7 +83,8 @@ button {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     border: none;
-    background-color: hsla(217, 10%, 25%, 0.4);
+    color: #fff;
+    background-color: #393e46;
 }
 
 .buts {
@@ -103,7 +104,7 @@ button {
 .course-title {
     font-size: 1rem;
     font-weight: 600;
-    color: hsl(216, 18%, 16%);
+    color: #fff;
     padding: 0.2rem;
     text-align: center;
 }   
@@ -117,7 +118,8 @@ button {
 }
 
 .card {
-    background-color: hsla(217, 10%, 25%, 0.4);
+    background-color: #393e46;
+    color: #fff;
     width: 80%;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
@@ -190,7 +192,8 @@ hr {
 }
 
     .card {
-    background-color: hsla(217, 10%, 25%, 0.4);
+    background-color: #393e46;
+    color: #fff;
     width: 120px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);

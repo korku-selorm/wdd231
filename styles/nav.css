@@ -41,7 +41,7 @@ nav {
     padding: 0.2rem;
     text-align:left;
     text-decoration: none;
-    color: hsl(216, 18%, 16%);
+    color: #1e242d;
     font-weight:700;
     border-bottom: 1px solid hsl(216, 18%, 16%);
     transition: 0.5s;
